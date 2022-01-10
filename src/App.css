@@ -1,38 +1,144 @@
-.App {
+.gamePlay {
+  height: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #D9D7F1;
+}
+
+.gameStart {
+  width: 50%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.welcome {
+  font-size: 42px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.app {
+  height: 100vh;
+  display:flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #D9D7F1;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.appContainer {
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gameEnd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+h1 {
+  font-size: 64px;
+  color: #000957;
+}
+
+.restart {
+  margin-top: 50px;
+  width: 10%;
+  height: 100px;
+  font-size: 24px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #7267CB;
+  color: white;
+}
+
+.top {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+}
+
+.timer {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 62px;
+  height: 120px;
+  width: 120px;
+  color:black;
+  font-weight: 500;
+}
+
+
+.bottom {
+  display:flex;
+  justify-content: center;
+  height: 40%;
+  width: 100%;
+}
+
+
+.questions {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+.question {
+  font-size: 60px;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  background: linear-gradient(#041C32,#22577E);
+  text-align: center;
+}
+
+.answers {
+  display:flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  width: 100%; 
+  font-size: 42px;
+}
+
+.answer {
+  text-align: center;
+  width: 30%;
+  border: 2px solid white;
+  margin: 0 20px 20px 20px;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: linear-gradient(#1A374D,#4C3F91);
+}
+
+.answer.correct {
+  background: mediumaquamarine;
+}
+
+.answer.wrong {
+  background: mediumvioletred;
+}
+
+.answer:hover {
+  background: #161853;
+}
+
+
+.endOfGame {
+  height: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.endCong {
+  width: 50%;
+  text-align: center; 
 }
